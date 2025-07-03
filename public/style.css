@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f9ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar with lighter blue + fade-in animation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005ec2; /* slightly lighter than #004aad */
+  padding: 1em 2em;
+  color: white;
+  animation: slideDown 0.6s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar .nav-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+  color: #ffea00;
+}
+
+/* Header and footer */
+header,
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Banner Image */
+.banner img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* School Info */
+.school-info {
+  padding: 2em;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Portal Section */
+.portals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portal-card {
+  background-color: #e6f0ff;
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  flex: 1 1 250px;
+  box-sizing: border-box;
+}
+
+.portal-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 0.5em 1em;
+  background-color: #004aad;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #003b85;
+}
+
+.btn.secondary {
+  background-color: #0075ff;
+}
+
+.btn.secondary:hover {
+  background-color: #005fcc;
+}
+
+/* Login Form Styles */
+.login-form {
+  max-width: 450px;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  width: 90%; /* Ensures it scales on smaller screens */
+  box-sizing: border-box;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #004aad;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.login-form .btn {
+  margin-top: 1em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.register-form {
+  max-width: 450px;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  width: 90%; /* Ensures it scales on smaller screens */
+  box-sizing: border-box;
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #004aad;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.register-form label {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.register-form input {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.register-form .btn {
+  margin-top: 1em;
+}
+
+/* Theme Toggle Button */
+#toggle-theme {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .portal-card,
+body.dark-mode .register-form,
+body.dark-mode .login-form,
+body.dark-mode .school-info {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+  box-shadow: none;
+}
+
+body.dark-mode .btn {
+  background-color: #005ec2;
+}
+
+body.dark-mode .btn.secondary {
+  background-color: #0075ff;
+}
+
+body.dark-mode input {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  .portal-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
