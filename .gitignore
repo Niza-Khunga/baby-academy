@@ -1,0 +1,17 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Node.js (if using npm later)
+node_modules/
+
+# Environment variables (for future backend)
+.env
+
+# Build or output folders (if you use any later)
+dist/
+build/

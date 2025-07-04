@@ -17,8 +17,7 @@ A simple, responsive, and user-friendly website for **Baby Academy**.
 
 ## 🚀 Live Demo
 
-Will be posted soon.
----
+## Will be posted soon.
 
 ## 🛠️ Project Structure
 
@@ -31,7 +30,6 @@ baby-academy/
 ├── register-teacher.html # Teacher registration page
 ├── style.css # All styles and responsive design
 ├── script.js # Theme toggle and nav menu logic
-
 
 ---
 
@@ -57,5 +55,3 @@ For questions or feedback, email:
 📮 `niza.khunga@cs.unza.zm`
 
 ---
-
-
