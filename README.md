@@ -1,6 +1,6 @@
 # 🎓 Baby Academy Website
 
-A simple, responsive, and user-friendly website for **Baby Academy**, an elementary school based in Lusaka, Zambia.
+A simple, responsive, and user-friendly website for **Baby Academy**.
 
 ---
 
