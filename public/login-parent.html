@@ -12,13 +12,22 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-      <div class="nav-brand">Baby Academy</div>
-      <ul class="nav-links">
+      <div class="nav-left">
+        <div class="nav-brand">Baby Academy</div>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle Menu">
+          ☰
+        </button>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#login">Login</a></li>
-        <li><a href="register-parent.html">Register</a></li>
+        <li><a href="login-parent.html">Parent Login</a></li>
+        <li><a href="login-teacher.html">Teacher Login</a></li>
       </ul>
-      <button id="toggle-theme" title="Toggle Theme">🌙</button>
+
+      <button id="toggle-theme" class="theme-toggle" title="Toggle Theme">
+        🌙
+      </button>
     </nav>
 
     <!-- Header -->
