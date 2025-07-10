@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Baby Academy, an elementary school in Lusaka, Zambia, providing quality early childhood education."
+    />
+    <title>Baby Academy - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="nav-brand">Baby Academy</div>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle Menu">
+          ☰
+        </button>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login-parent.html">Parent Login</a></li>
+        <li><a href="login-teacher.html">Teacher Login</a></li>
+      </ul>
+
+      <button id="toggle-theme" class="theme-toggle" title="Toggle Theme">
+        🌙
+      </button>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>Welcome to Baby Academy</h1>
+      <p>Your child's first step to learning</p>
+    </header>
+
+    <!-- Banner Image -->
+    <section class="banner">
+      <img src="banner.jpg" alt="Happy kids learning" />
+    </section>
+
+    <!-- Portals -->
+    <section class="portals" id="portals">
+      <div class="portal-card">
+        <h3>Parents Portal</h3>
+        <a href="login-parent.html" class="btn">Login</a>
+        <a href="register-parent.html" class="btn secondary">Register</a>
+      </div>
+
+      <div class="portal-card">
+        <h3>Teachers Portal</h3>
+        <a href="login-teacher.html" class="btn">Login</a>
+        <a href="register-teacher.html" class="btn secondary">Register</a>
+      </div>
+    </section>
+
+    <!-- School Info -->
+    <section class="school-info" id="about">
+      <h2>About Us</h2>
+      <ul>
+        <li><strong>Year Established:</strong> 2010</li>
+        <li><strong>Address:</strong> 123 Sunshine Road, Lusaka, Zambia</li>
+        <li id="contact">
+          <strong>Contact:</strong> +260 973 123 456 | info@babyacademy.edu.zm
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Baby Academy. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

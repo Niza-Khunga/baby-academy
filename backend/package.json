@@ -1,0 +1,22 @@
+{
+  "name": "baby-academy-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "description": "Backend API for Baby Academy project",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.16.2"
+  }
+}
